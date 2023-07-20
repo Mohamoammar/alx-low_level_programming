@@ -1,18 +1,26 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
-int main() {
+/**
+ * main - Determines if a number is positive, negative or zero.
+( * 0 is the number to be checked
+ * Return: 0 on Success
+ */
+void positive_or_negative(int i);
+{
+if (i < 0)
+{
+	printf("%d is %s\n , i, "negative");
+}
+	else if (i > 0)
+{
+	 printf("%d is %s\n , i, "positive");
+}
+	else
+{
+	 printf("%d is %s\n , i, "zero");
+}
+return;
 
-    double num;
-    printf("Enter a number: ");
-    scanf("%lf", &num);
-    if (num <= 0.0) {
-        if (num == 0.0)
-            printf("You entered 0.");
-        else
-            printf("You entered a negative number.");
-    } 
-    else
-        printf("You entered a positive number.");
-
-    return 0;
 }
